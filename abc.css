@@ -1,0 +1,32 @@
+*{margin:0; padding:0; outline:0;}
+
+body{font-family:arial; font-size:20px; color:#444; line-height:20px;}
+.content{background:#E8E6F4; width:750px; height:auto; margin:0 auto; text-align:center; }
+
+.main{background:#BFBDD1; padding:10px 10px; margin:10px; min-height:500px;}
+.header ,.footer{padding:5px; background:#423A76; color:white;}
+
+
+form{background:#E8E6F4; padding: 5px 10px; margin: 5px;}
+
+table{ align:center; margin :30px;  margin-left: 100px; border:1px solid #D2CFE6; padding:10px;}
+td,tr{  cursor:pointer; font-size:20px;  text-align: center; height:35px; margin-bottom:0;}
+
+button{width: 200px; padding:5px 15px; height:400px; }
+input[type=button]:hover {background-color: #008080}
+
+input{width: 200px; }
+
+input[type=text],input[type=number]{ height:30px; width:200px; border: 0; background-color: #D2CFE6;}
+
+input[type=button],input[type=reset]{
+    background-color: #160A61;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.name{width:30px;}
+.watch{background-color: #D2CFE6; margin-left:450px; padding: 5px 10px; font-size: 20px; font-family: 'digital-clock-font'; color: #2F4F4F	;}

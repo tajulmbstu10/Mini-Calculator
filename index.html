@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Claculator</title>
+
+<link href="abc.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+<div class = "content"> 
+<script type="text/javascript">
+//document.write("Calculator");
+</script>
+
+
+<div class = "header">
+  <div align="center"><script>
+	  document.write("Welcome To My Project");
+	  </script></div>
+</div>
+
+<div class = "main">
+
+<section>
+	
+			
+			
+<form name="frm">
+<div class ="watch"> Time - <span id = "hour"></span> :
+				<span id = "min"></span> :
+				<span id = "sec"></span> 
+			</div>
+	
+<table>
+	<caption> Mini Calculator <br></br></caption>
+	
+	<tr>
+	<td> Input Box </td>
+	<td> <input type="number" name="i" placeholder ="Please enter the number..." required=""> </td>
+	</tr>
+	
+	<tr>
+	
+	<td><input type="button" onclick="cal(1)" value="round"/></td>
+	<td><input type="button" onclick="cal(2)" value="abs"/></td>
+
+	</tr>
+	
+	<tr>
+	
+	<td><input type="button" onclick="cal(3)" value="Square"/></td>
+	<td><input type="button" onclick="cal(4)" value="Cube"/></td>
+
+	</tr>
+	
+	<tr>
+	
+	<td><input type="button" onclick="cal(5)" value="Root"/></td>
+	<td><input type="button" onclick="cal(6)" value="Sin"/></td>
+
+	</tr>
+	
+	<tr>
+	
+		<td><input type="button" onclick="cal(7)" value="Cos"/></td>
+	<td><input type="button" onclick="cal(8)" value="Tan"/></td>
+
+	</tr>
+	
+	<tr>
+	
+		<td><input type="button" onclick="cal(9)" value="log"/></td>
+	<td><input type="button" onclick="cal(10)" value="ln"/></td>
+
+	</tr>
+	
+	<tr>
+	
+	<td><input type="button" onclick="cal(11)" value="exp"/></td>
+	
+	<td><input type="reset" value="AC"/></td>
+
+	</tr>
+	
+	<tr>
+	<td> Result Box </td>
+	<td> <input type="text" name="r" placeholder="Result is Here..." disabled= "disabled"> </td>
+	</tr>
+	
+	</tr>
+
+	</table> 
+    
+    
+<script> document.write("Design and Developed By: <br> </br> MD. TAJUL ISLAM")</script>
+    </form>
+	
+	<script>
+	
+	function cal(pro){
+	
+		with(document.frm)
+		switch (pro){
+			case 1:
+			r.value = Math.round(i.value);
+			break;
+			
+			case 2:
+			r.value = Math.abs(i.value);
+			break;
+			
+			case 3:
+			r.value = Math.pow(i.value,2);
+			break;
+			
+			case 4:
+			r.value = Math.pow(i.value,3);
+			break;
+			
+			case 5:
+			r.value = Math.sqrt(i.value);
+			break;
+			
+			case 6:
+			r.value = Math.sin(i.value * Math.PI / 180);
+			break;
+			
+			
+			
+			case 7:
+			r.value = Math.cos(i.value * Math.PI / 180);
+			break;
+			
+			case 8:
+			r.value = Math.tan(i.value * Math.PI / 180);
+			break;
+			
+			case 9:
+			r.value = Math.log10(i.value);
+			break;
+			
+			
+			
+			case 10:
+			r.value = Math.log(i.value);
+			break;
+			
+			case 11:
+			r.value = Math.exp(i.value);
+			break;
+		
+		}
+		
+		}
+	
+		function watch(){
+	
+	var date = new Date();
+	    document.getElementById("hour").innerHTML = date.getHours();
+		document.getElementById("min").innerHTML = date.getMinutes();
+		document.getElementById("sec").innerHTML = date.getSeconds();
+
+	}
+	setInterval("watch()",1000);
+	
+	</script>
+</section>
+ </div>
+
+
+<div class = "footer"> <script>document.write("Thank You")</script></div>
+
+
+</div>
+
+</body>
+</html>
